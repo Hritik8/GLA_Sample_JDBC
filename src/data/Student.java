@@ -12,4 +12,11 @@ public class Student {
     private String name;
     private int year;
     private double cpi;
+
+    public Student(int rollNumber, String name, int year, double cpi) {
+        this.rollNumber = rollNumber;
+        this.name = name;
+        this.year = year;
+        this.cpi = cpi;
+    }
 }
