@@ -11,6 +11,7 @@ import data.Student;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -60,6 +61,10 @@ public class StudentEntryHelper {
     public double getCPIFromUser() {
         System.out.println("Enter the current CPI of the student: ");
         return scanner.nextDouble();
+    }
+
+    public ResultSet getAllRecordsFromDatabase(Connection connection) {
+        return null;
     }
 
 }
