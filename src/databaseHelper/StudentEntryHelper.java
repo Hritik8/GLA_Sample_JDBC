@@ -32,7 +32,4 @@ public class StudentEntryHelper {
         return preparedStatement.executeUpdate() >= 1;
     }
 
-    public void showEntryPromptForField(String fieldName) {
-        System.out.println("Please enter " + fieldName + ": ");
-    }
 }
