@@ -18,5 +18,6 @@ public class Main {
         connection.startConnection();
         connection.printConnectionStatus();
         StudentEntryHelper entryHelper = new StudentEntryHelper();
+        int studentRollNumber = entryHelper.getRollNumberFromUser();
     }
 }
