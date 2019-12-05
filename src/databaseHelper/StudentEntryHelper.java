@@ -90,13 +90,14 @@ public class StudentEntryHelper {
         this.printCurrentTableData(this.getAllRecordsFromDatabase(DatabaseConnection.getConnection()));
     }
 
-    public boolean searchForStudentInDatabase(Student student) {
+    public boolean searchForStudentInDatabase(Student student) throws SQLException {
         int rollNumber = student.getRollNumber();
         return this.searchForStudentInDatabase(rollNumber);
     }
 
-    public boolean searchForStudentInDatabase(int studentRollNumber) {
+    public boolean searchForStudentInDatabase(int studentRollNumber) throws SQLException {
         String searchQuery = "";
+        PreparedStatement preparedStatement = DatabaseConnection.getConnection().prepareStatement(searchQuery);
         return false;
     }
 }
