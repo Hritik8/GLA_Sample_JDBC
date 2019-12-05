@@ -18,6 +18,5 @@ public class Main {
         connection.startConnection();
         connection.printConnectionStatus();
         StudentEntryHelper entryHelper = new StudentEntryHelper();
-        entryHelper.showEntryPromptForField("Name");
     }
 }
