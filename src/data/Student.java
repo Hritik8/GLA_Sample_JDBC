@@ -13,6 +13,11 @@ public class Student {
     private int year;
     private double cpi;
 
+    @Override
+    public String toString() {
+        return this.getName() + ": " + this.getCpi();
+    }
+
     public int getRollNumber() {
         return rollNumber;
     }
