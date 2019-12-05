@@ -21,6 +21,7 @@ public class StudentEntryHelper {
      * This method will help us to store the values of a student to the database
      */
     public boolean createNewStudentInDatabase(Connection connection, Student student) {
+        String insertQuery = "INSERT INTO Student (rollNumber, name, year, cpi) VALUES (?, ?, ?, ?);";
         return false;
     }
 
