@@ -51,7 +51,7 @@ public class StudentEntryHelper {
 
     public double getCPIFromUser() {
         System.out.println("Enter the current CPI of the student: ");
-        return 0.0;
+        return scanner.nextDouble();
     }
 
 }
