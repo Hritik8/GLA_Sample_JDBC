@@ -99,6 +99,7 @@ public class StudentEntryHelper {
         String searchQuery = "SELECT * FROM Student WHERE rollNumber = ?";
         PreparedStatement preparedStatement = DatabaseConnection.getConnection().prepareStatement(searchQuery);
         preparedStatement.setInt(1, studentRollNumber);
+        int numberOfStudentsFound = preparedStatement.executeUpdate();
         return false;
     }
 }
