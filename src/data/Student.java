@@ -13,9 +13,16 @@ public class Student {
     private int year;
     private double cpi;
 
+    public Student(int rollNumber, String name, int year, double cpi) {
+        this.rollNumber = rollNumber;
+        this.name = name;
+        this.year = year;
+        this.cpi = cpi;
+    }
+
     @Override
     public String toString() {
-        return this.getName() + ": " + this.getCpi();
+        return String.format("|%-10d|%-20s|%-1d|%-4.2f|", this.getRollNumber(), this.getName(), this.getYear(), this.getCpi());
     }
 
     public int getRollNumber() {
@@ -47,13 +54,6 @@ public class Student {
     }
 
     public void setCpi(double cpi) {
-        this.cpi = cpi;
-    }
-
-    public Student(int rollNumber, String name, int year, double cpi) {
-        this.rollNumber = rollNumber;
-        this.name = name;
-        this.year = year;
         this.cpi = cpi;
     }
 }
