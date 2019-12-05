@@ -90,4 +90,11 @@ public class StudentEntryHelper {
         this.printCurrentTableData(this.getAllRecordsFromDatabase(DatabaseConnection.getConnection()));
     }
 
+    public boolean searchForStudentInDatabase(Student student) {
+        return false;
+    }
+
+    public boolean searchForStudentInDatabase(int studentRollNumber) {
+        return false;
+    }
 }
