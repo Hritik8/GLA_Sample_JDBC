@@ -33,7 +33,7 @@ public class StudentEntryHelper {
     }
 
     private void showEmptyPromptForField(String fieldName) {
-
+        System.out.println("Please enter " + fieldName + ": ");
     }
 
 }
