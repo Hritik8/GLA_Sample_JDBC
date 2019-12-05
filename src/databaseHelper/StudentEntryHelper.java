@@ -46,7 +46,7 @@ public class StudentEntryHelper {
 
     public int getYearFromUser() {
         System.out.println("Enter the current year of the student: ");
-        return 0;
+        return Integer.parseInt(scanner.nextLine().trim());
     }
 
 }
