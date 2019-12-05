@@ -36,7 +36,7 @@ public class Main {
         entryHelper.createNewStudentInDatabase(DatabaseConnection.getConnection(), student);
         entryHelper.checkIfStudentCreated();*/
 
-        entryHelper.printResultSet(entryHelper.getAllRecordsFromDatabase(DatabaseConnection.getConnection()));
+        entryHelper.printCurrentTableData(entryHelper.getAllRecordsFromDatabase(DatabaseConnection.getConnection()));
 
     }
 }
