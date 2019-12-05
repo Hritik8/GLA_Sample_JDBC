@@ -29,7 +29,7 @@ public class StudentEntryHelper {
         preparedStatement.setString(2, student.getName());
         preparedStatement.setInt(3, student.getYear());
         preparedStatement.setDouble(4, student.getCpi());
-        return false;
+        return preparedStatement.executeUpdate() >= 1;
     }
 
 }
