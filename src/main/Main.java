@@ -36,6 +36,5 @@ public class Main {
         // Send the student object to the database
         entryHelper.createNewStudentInDatabase(DatabaseConnection.getConnection(), student);
         entryHelper.checkIfStudentCreated();
-
     }
 }
