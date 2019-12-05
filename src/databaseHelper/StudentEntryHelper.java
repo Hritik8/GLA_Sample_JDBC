@@ -10,6 +10,8 @@ package databaseHelper;
 import data.Student;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class StudentEntryHelper {
     /*
@@ -20,8 +22,9 @@ public class StudentEntryHelper {
     /**
      * This method will help us to store the values of a student to the database
      */
-    public boolean createNewStudentInDatabase(Connection connection, Student student) {
+    public boolean createNewStudentInDatabase(Connection connection, Student student) throws SQLException {
         String insertQuery = "INSERT INTO Student (rollNumber, name, year, cpi) VALUES (?, ?, ?, ?);";
+        PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
         return false;
     }
 
