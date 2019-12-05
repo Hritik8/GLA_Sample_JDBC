@@ -64,7 +64,7 @@ public class StudentEntryHelper {
     }
 
     public ResultSet getAllRecordsFromDatabase(Connection connection) throws SQLException {
-        String selectAllQuery = "";
+        String selectAllQuery = "SELECT * FROM Student;";
         PreparedStatement preparedStatement = connection.prepareStatement(selectAllQuery);
         return null;
     }
