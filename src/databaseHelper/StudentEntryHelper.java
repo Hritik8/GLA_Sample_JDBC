@@ -36,6 +36,13 @@ public class StudentEntryHelper {
         return didCurrentOperationSucceed;
     }
 
+    /**
+     * Call this method after calling the createNewStudentInDatabase method only
+     */
+    public void checkIfStudentCreated() {
+
+    }
+
     public int getRollNumberFromUser() {
         System.out.println("Enter the roll number of student: ");
         return Integer.parseInt(scanner.nextLine().trim());
