@@ -100,6 +100,6 @@ public class StudentEntryHelper {
         PreparedStatement preparedStatement = DatabaseConnection.getConnection().prepareStatement(searchQuery);
         preparedStatement.setInt(1, studentRollNumber);
         int numberOfStudentsFound = preparedStatement.executeUpdate();
-        return false;
+        return numberOfStudentsFound >= 1;
     }
 }
