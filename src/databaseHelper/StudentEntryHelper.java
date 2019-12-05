@@ -32,7 +32,8 @@ public class StudentEntryHelper {
         preparedStatement.setString(2, student.getName());
         preparedStatement.setInt(3, student.getYear());
         preparedStatement.setDouble(4, student.getCpi());
-        return preparedStatement.executeUpdate() >= 1;
+        didCurrentOperationSucceed = preparedStatement.executeUpdate() >= 1;
+        return didCurrentOperationSucceed;
     }
 
     public int getRollNumberFromUser() {
