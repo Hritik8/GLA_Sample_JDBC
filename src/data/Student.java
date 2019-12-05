@@ -22,7 +22,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return String.format("|%-10d|%-20s|%-1d|%-4.2f|", this.getRollNumber(), this.getName(), this.getYear(), this.getCpi());
+        return String.format("|%-15d|%-20s|%-15d|%-15.2f|", this.getRollNumber(), this.getName(), this.getYear(), this.getCpi());
     }
 
     public int getRollNumber() {

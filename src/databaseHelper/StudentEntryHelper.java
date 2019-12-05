@@ -71,7 +71,7 @@ public class StudentEntryHelper {
     }
 
     private void printCurrentTableData(ResultSet resultSet) throws SQLException {
-        System.out.println("\n----\n");
+        System.out.println("----");
         while (resultSet.next()) {
             // retrieve all the fields of a student into variables
             int rollNumber = resultSet.getInt("rollNumber");
@@ -81,11 +81,12 @@ public class StudentEntryHelper {
             Student student = new Student(rollNumber, name, year, cpi);
             System.out.println(student);
         }
-        System.out.println("\n----\n");
+        System.out.println("----\n");
     }
 
     public void readAllRecordsInStudentTable() throws SQLException {
         System.out.println("Student Table Records");
+        System.out.println(String.format("|%-15s|%-20s|%-15s|%-15s|", "Roll Number", "Name", "Year", "CPI"));
         this.printCurrentTableData(this.getAllRecordsFromDatabase(DatabaseConnection.getConnection()));
     }
 
