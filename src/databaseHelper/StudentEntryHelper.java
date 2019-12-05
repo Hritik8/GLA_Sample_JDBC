@@ -40,6 +40,7 @@ public class StudentEntryHelper {
     }
 
     public String getNameFromUser() {
+        System.out.println("Enter the name of the student: ");
         return "";
     }
 
