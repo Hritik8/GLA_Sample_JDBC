@@ -12,12 +12,14 @@ import data.Student;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Scanner;
 
 public class StudentEntryHelper {
     /*
      * We are going to include the CRUD operations as methods in this class.
      * */
 
+    private static Scanner scanner;
 
     /**
      * This method will help us to store the values of a student to the database
