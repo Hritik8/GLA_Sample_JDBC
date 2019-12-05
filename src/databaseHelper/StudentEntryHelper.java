@@ -96,10 +96,17 @@ public class StudentEntryHelper {
     }
 
     public boolean searchForStudentInDatabase(int studentRollNumber) throws SQLException {
-        String searchQuery = "SELECT * FROM Student WHERE rollNumber = ?";
+        String searchQuery = "SELECT * FROM Student WHERE rollNumber = ?;";
         PreparedStatement preparedStatement = DatabaseConnection.getConnection().prepareStatement(searchQuery);
         preparedStatement.setInt(1, studentRollNumber);
-        int numberOfStudentsFound = preparedStatement.executeUpdate();
-        return numberOfStudentsFound >= 1;
+        ResultSet resultSet = preparedStatement.executeQuery();
+        int counter = 0;
+        while (resultSet.next()) {
+            counter++;
+        }
+        if (counter >= 1) {
+            System.out.println("Match Found!");
+        }
+        return counter >= 1;
     }
 }

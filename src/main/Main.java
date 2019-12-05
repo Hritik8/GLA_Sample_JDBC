@@ -8,7 +8,6 @@
 package main;
 
 import connection.DatabaseConnection;
-import data.Student;
 import databaseHelper.StudentEntryHelper;
 
 import java.sql.SQLException;
@@ -22,7 +21,7 @@ public class Main {
         connection.printConnectionStatus();
 
         // create an object to the Entry Helper Class
-        StudentEntryHelper entryHelper = new StudentEntryHelper();
+        StudentEntryHelper entryHelper = new StudentEntryHelper();/*
 
         // Input values for the Student object
         int studentRollNumber = entryHelper.getRollNumberFromUser();
@@ -35,9 +34,12 @@ public class Main {
 
         // Send the student object to the database
         entryHelper.createNewStudentInDatabase(DatabaseConnection.getConnection(), student);
-        entryHelper.checkIfStudentCreated();
+        entryHelper.checkIfStudentCreated();*/
 
         // read operation on the table data
         entryHelper.readAllRecordsInStudentTable();
+
+
+        entryHelper.searchForStudentInDatabase(4);
     }
 }
