@@ -20,5 +20,6 @@ public class Main {
         StudentEntryHelper entryHelper = new StudentEntryHelper();
         int studentRollNumber = entryHelper.getRollNumberFromUser();
         String studentName = entryHelper.getNameFromUser();
+        int studentYear = entryHelper.getYearFromUser();
     }
 }
