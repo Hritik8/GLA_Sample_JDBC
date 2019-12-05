@@ -70,6 +70,7 @@ public class StudentEntryHelper {
     }
 
     public void printResultSet(ResultSet resultSet) throws SQLException {
+        System.out.println("\n----\n");
         while (resultSet.next()) {
             // retrieve all the fields of a student into variables
             int rollNumber = resultSet.getInt("rollNumber");
@@ -79,6 +80,7 @@ public class StudentEntryHelper {
             Student student = new Student(rollNumber, name, year, cpi);
             System.out.println(student);
         }
+        System.out.println("\n----\n");
     }
 
 }
