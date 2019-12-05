@@ -85,6 +85,7 @@ public class StudentEntryHelper {
     }
 
     public void readAllRecordsInStudentTable() throws SQLException {
+        System.out.println("Student Table Records");
         this.printCurrentTableData(this.getAllRecordsFromDatabase(DatabaseConnection.getConnection()));
     }
 
