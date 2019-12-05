@@ -8,5 +8,8 @@
 package data;
 
 public class Student {
-
+    private int rollNumber;
+    private String name;
+    private int year;
+    private double cpi;
 }
