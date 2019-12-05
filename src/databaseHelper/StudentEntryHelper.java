@@ -83,4 +83,7 @@ public class StudentEntryHelper {
         System.out.println("\n----\n");
     }
 
+    public void readAllRecordsInStudentTable() throws SQLException {
+    }
+
 }
