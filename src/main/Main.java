@@ -39,7 +39,7 @@ public class Main {
         // read operation on the table data
         entryHelper.readAllRecordsInStudentTable();
 
-
+        // search for a student in the database with the roll number
         entryHelper.searchForStudentInDatabase(4);
     }
 }

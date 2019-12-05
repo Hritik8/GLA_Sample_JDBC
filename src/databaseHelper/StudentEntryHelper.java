@@ -109,4 +109,8 @@ public class StudentEntryHelper {
         }
         return counter >= 1;
     }
+
+    public ResultSet updateStudentRecordsInDatabase(Connection connection, Student student) throws SQLException {
+        return null;
+    }
 }
