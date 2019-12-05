@@ -8,4 +8,7 @@
 package databaseHelper;
 
 public class StudentEntryHelper {
+    /*
+     * We are going to include the CRUD operations as methods in this class.
+     * */
 }
