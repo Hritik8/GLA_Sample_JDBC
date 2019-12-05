@@ -40,7 +40,7 @@ public class StudentEntryHelper {
      * Call this method after calling the createNewStudentInDatabase method only
      */
     public void checkIfStudentCreated() {
-
+        System.out.println(didCurrentOperationSucceed ? "Student Creation Succeeded" : "Student Creation Failed");
     }
 
     public int getRollNumberFromUser() {
