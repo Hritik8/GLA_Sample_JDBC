@@ -92,7 +92,7 @@ public class StudentEntryHelper {
 
     public boolean searchForStudentInDatabase(Student student) {
         int rollNumber = student.getRollNumber();
-        return false;
+        return this.searchForStudentInDatabase(rollNumber);
     }
 
     public boolean searchForStudentInDatabase(int studentRollNumber) {
