@@ -49,4 +49,8 @@ public class StudentEntryHelper {
         return Integer.parseInt(scanner.nextLine().trim());
     }
 
+    public double getCPIFromUser() {
+        return 0.0;
+    }
+
 }
