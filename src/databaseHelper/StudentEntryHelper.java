@@ -96,6 +96,7 @@ public class StudentEntryHelper {
     }
 
     public boolean searchForStudentInDatabase(int studentRollNumber) {
+        String searchQuery = "";
         return false;
     }
 }
