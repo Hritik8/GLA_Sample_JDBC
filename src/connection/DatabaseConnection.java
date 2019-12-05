@@ -23,6 +23,6 @@ public class DatabaseConnection {
 
     public boolean startConnection() throws SQLException {
         connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-        return false;
+        return connection != null;
     }
 }
