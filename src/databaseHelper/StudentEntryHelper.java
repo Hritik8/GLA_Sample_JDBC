@@ -96,7 +96,7 @@ public class StudentEntryHelper {
     }
 
     public boolean searchForStudentInDatabase(int studentRollNumber) throws SQLException {
-        String searchQuery = "";
+        String searchQuery = "SELECT * FROM Student WHERE rollNumber = ?";
         PreparedStatement preparedStatement = DatabaseConnection.getConnection().prepareStatement(searchQuery);
         return false;
     }
