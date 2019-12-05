@@ -34,4 +34,8 @@ public class StudentEntryHelper {
         return preparedStatement.executeUpdate() >= 1;
     }
 
+    public int getRollNumberFromUser() {
+        return 0;
+    }
+
 }
