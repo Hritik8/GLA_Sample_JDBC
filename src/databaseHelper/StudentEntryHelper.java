@@ -69,7 +69,7 @@ public class StudentEntryHelper {
         return preparedStatement.executeQuery();
     }
 
-    public void printCurrentTableData(ResultSet resultSet) throws SQLException {
+    private void printCurrentTableData(ResultSet resultSet) throws SQLException {
         System.out.println("\n----\n");
         while (resultSet.next()) {
             // retrieve all the fields of a student into variables
