@@ -21,5 +21,6 @@ public class Main {
         int studentRollNumber = entryHelper.getRollNumberFromUser();
         String studentName = entryHelper.getNameFromUser();
         int studentYear = entryHelper.getYearFromUser();
+        double studentCurrentCPI = entryHelper.getCPIFromUser();
     }
 }
