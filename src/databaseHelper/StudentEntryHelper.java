@@ -69,8 +69,10 @@ public class StudentEntryHelper {
         return preparedStatement.executeQuery();
     }
 
-    public void printResultSet(ResultSet resultSet) {
+    public void printResultSet(ResultSet resultSet) throws SQLException {
+        while (resultSet.next()) {
 
+        }
     }
 
 }
