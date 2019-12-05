@@ -37,6 +37,7 @@ public class Main {
         entryHelper.createNewStudentInDatabase(DatabaseConnection.getConnection(), student);
         entryHelper.checkIfStudentCreated();
 
+        // read operation on the table data
         entryHelper.readAllRecordsInStudentTable();
     }
 }
