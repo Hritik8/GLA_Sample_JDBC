@@ -69,4 +69,8 @@ public class StudentEntryHelper {
         return preparedStatement.executeQuery();
     }
 
+    public void printResultSet(ResultSet resultSet) {
+
+    }
+
 }
