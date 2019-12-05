@@ -44,4 +44,8 @@ public class StudentEntryHelper {
         return scanner.nextLine().trim();
     }
 
+    public int getYearFromUser() {
+        return 0;
+    }
+
 }
