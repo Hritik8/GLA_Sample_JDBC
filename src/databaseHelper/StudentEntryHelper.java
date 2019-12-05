@@ -63,8 +63,9 @@ public class StudentEntryHelper {
         return scanner.nextDouble();
     }
 
-    public ResultSet getAllRecordsFromDatabase(Connection connection) {
+    public ResultSet getAllRecordsFromDatabase(Connection connection) throws SQLException {
         String selectAllQuery = "";
+        PreparedStatement preparedStatement = connection.prepareStatement(selectAllQuery);
         return null;
     }
 
