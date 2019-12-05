@@ -32,4 +32,8 @@ public class StudentEntryHelper {
         return preparedStatement.executeUpdate() >= 1;
     }
 
+    private void showEmptyPromptForField(String fieldName) {
+
+    }
+
 }
