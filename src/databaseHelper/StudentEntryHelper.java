@@ -35,6 +35,7 @@ public class StudentEntryHelper {
     }
 
     public int getRollNumberFromUser() {
+        System.out.println("Enter the roll number of student: ");
         return 0;
     }
 
