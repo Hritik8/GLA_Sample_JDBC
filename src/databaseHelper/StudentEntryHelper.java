@@ -35,6 +35,4 @@ public class StudentEntryHelper {
     private void showEntryPromptForField(String fieldName) {
         System.out.println("Please enter " + fieldName + ": ");
     }
-
-
 }
