@@ -20,6 +20,7 @@ public class StudentEntryHelper {
      * */
 
     private static final Scanner scanner = new Scanner(System.in);
+    private static boolean didCurrentOperationSucceed = false;
 
     /**
      * This method will help us to store the values of a student to the database
