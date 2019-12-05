@@ -64,6 +64,7 @@ public class StudentEntryHelper {
     }
 
     public ResultSet getAllRecordsFromDatabase(Connection connection) {
+        String selectAllQuery = "";
         return null;
     }
 
