@@ -18,4 +18,8 @@ public class DatabaseConnection {
     public static Connection getConnection() {
         return connection;
     }
+
+    public boolean startConnection() {
+        return false;
+    }
 }
