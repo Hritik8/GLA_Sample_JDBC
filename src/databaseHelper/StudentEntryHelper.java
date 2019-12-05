@@ -39,4 +39,8 @@ public class StudentEntryHelper {
         return Integer.parseInt(scanner.nextLine().trim());
     }
 
+    public String getNameFromUser() {
+        return "";
+    }
+
 }
