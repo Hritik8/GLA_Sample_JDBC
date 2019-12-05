@@ -25,6 +25,10 @@ public class StudentEntryHelper {
     public boolean createNewStudentInDatabase(Connection connection, Student student) throws SQLException {
         String insertQuery = "INSERT INTO Student (rollNumber, name, year, cpi) VALUES (?, ?, ?, ?);";
         PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
+        preparedStatement.setInt(1, student.getRollNumber());
+        preparedStatement.setString(2, student.getName());
+        preparedStatement.setInt(3, student.getYear());
+        preparedStatement.setDouble(4, student.getCpi());
         return false;
     }
 
