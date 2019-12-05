@@ -76,6 +76,7 @@ public class StudentEntryHelper {
             String name = resultSet.getString("name");
             int year = resultSet.getInt("year");
             double cpi = resultSet.getDouble("cpi");
+            Student student = new Student(rollNumber, name, year, cpi);
         }
     }
 
