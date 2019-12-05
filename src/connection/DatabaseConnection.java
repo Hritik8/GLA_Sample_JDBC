@@ -8,6 +8,8 @@
 package connection;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/GLA";
@@ -19,7 +21,8 @@ public class DatabaseConnection {
         return connection;
     }
 
-    public boolean startConnection() {
+    public boolean startConnection() throws SQLException {
+        connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
         return false;
     }
 }
