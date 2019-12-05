@@ -7,6 +7,7 @@
 
 package databaseHelper;
 
+import connection.DatabaseConnection;
 import data.Student;
 
 import java.sql.Connection;
@@ -84,6 +85,7 @@ public class StudentEntryHelper {
     }
 
     public void readAllRecordsInStudentTable() throws SQLException {
+        this.printCurrentTableData(this.getAllRecordsFromDatabase(DatabaseConnection.getConnection()));
     }
 
 }
