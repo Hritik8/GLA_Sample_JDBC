@@ -8,6 +8,7 @@
 package main;
 
 import connection.DatabaseConnection;
+import databaseHelper.StudentEntryHelper;
 
 import java.sql.SQLException;
 
@@ -16,5 +17,6 @@ public class Main {
         DatabaseConnection connection = new DatabaseConnection();
         connection.startConnection();
         connection.printConnectionStatus();
+        StudentEntryHelper entryHelper = new StudentEntryHelper();
     }
 }
