@@ -8,6 +8,7 @@
 package main;
 
 import connection.DatabaseConnection;
+import data.Student;
 import databaseHelper.StudentEntryHelper;
 
 import java.sql.SQLException;
@@ -22,5 +23,6 @@ public class Main {
         String studentName = entryHelper.getNameFromUser();
         int studentYear = entryHelper.getYearFromUser();
         double studentCurrentCPI = entryHelper.getCPIFromUser();
+        Student student = new Student(studentRollNumber, studentName, studentYear, studentCurrentCPI);
     }
 }
