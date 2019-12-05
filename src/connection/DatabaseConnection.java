@@ -25,4 +25,8 @@ public class DatabaseConnection {
         connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
         return connection != null;
     }
+
+    public void printConnectionStatus() {
+        System.out.println(getConnection() != null ? "Connection is active" : "Connection is active");
+    }
 }
