@@ -15,5 +15,6 @@ public class Main {
     public static void main(String[] args) throws SQLException {
         DatabaseConnection connection = new DatabaseConnection();
         connection.startConnection();
+        connection.printConnectionStatus();
     }
 }
