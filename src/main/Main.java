@@ -24,5 +24,6 @@ public class Main {
         int studentYear = entryHelper.getYearFromUser();
         double studentCurrentCPI = entryHelper.getCPIFromUser();
         Student student = new Student(studentRollNumber, studentName, studentYear, studentCurrentCPI);
+        entryHelper.createNewStudentInDatabase(DatabaseConnection.getConnection(), student);
     }
 }
